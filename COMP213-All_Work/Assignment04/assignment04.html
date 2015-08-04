@@ -1,0 +1,231 @@
+﻿<!-- Author: Mohammed Juned Ahmed -->
+<!-- Web App Name: COMP213 - Assignment 04 -->
+<!-- Creation Date: July 21, 2015 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continuing Education Course/Instructor Evaluation</title>
+    <!--CSS Style Sheets-->
+    <link href="Content/reset.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header align="center">
+        <div class="banner" align="center">
+            <a href="http://www.centennialcollege.ca/">
+                <img alt="banner" src="Assets/joint.jpg" />
+            </a>
+        </div>
+    </header>
+    <!--HEADER-->
+    
+    
+    <div id="title" align="center"><span>Continuing Education Course/Instructor Evaluation</span></div>
+    <!--CONTENT-->
+    <div id="mainContent" action="#" method="get">
+        <p>Please read each statement carefully and consider each one indivisually. Use the <span>computer card </span>to make your choice (use a pencil to fill in the space). Give only <span>one answer </span>for each question.</p>
+        <form id="introForm">
+            <!--Course Code-->
+            <div class="formGroup">
+                <label for="courseCode">Course Name/Code:</label>
+                <input type="text" name="courseCode" id="courseCode" placeholder="Enter Course Name/Code" required autofocus autocomplete="off" />
+            </div>
+            <!--Semester-->
+            <div class="formGroup">
+                <label for="semester">Semester:</label>
+                <input type="radio" name="semester" id="fall" />
+                <label for="fall">Fall</label>
+                <input type="radio" name="semester" id="winter" />
+                <label for="winter">Winter</label>
+                <input type="radio" name="semester" id="springSummer" checked />
+                <label for="springSummer">Spring/Summer</label>
+                <label for="year">Year:</label>
+                <input type="text" name="year" id="year" />
+            </div>
+
+            <!--Instructor-->
+            <div class="formGroup">
+                <label for="instructor">Instructor:</label>
+                <input type="text" name="instructor" id="instructor" placeholder="Enter Your Instructor's Name" autocomplete="off" />
+            </div>
+        </form>
+        <form id="mainForm" action="#" method="get">
+            <h4>INSTRUCTOR</h4>
+            <h6>How would you rate the instructor's:</h6>
+            <!--1. knowledge-->
+            <div id="formGroup">
+                <label for="knowledge">1. <span>knowledge</span> of subject?</label>
+                <div class="options">
+                    <input type="radio" name="knowledge" id="execellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="knowledge" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="knowledge" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="knowledge" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+            <!--2. helpfullness-->
+            <div class="formGroup">
+                <label for="helpfullness">2. <span>helpfullness</span>?</label>
+                <div id="options">
+                    <input type="radio" name="helpfullness" id="execellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="helpfullness" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="helpfullness" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="helpfullness" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+            <!--3. coustesy & respect-->
+            <div class="formGroup">
+                <label for="respect">3. <span>coustesy and respect</span> for all students?</label>
+                <div id="options">
+                    <input type="radio" name="respect" id="excellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="respect" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="respect" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="respect" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+            <!--4. communication skills-->
+            <div class="formGroup">
+                <label for="communication">4. <span>communication</span>?</label>
+                <div id="options">
+                    <input type="radio" name="communication" id="excellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="communication" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="communication" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="communication" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+            <!--5. performance-->
+            <div class="formGroup">
+                <label for="performance">5. overall <span>performance</span>?</label>
+                <div id="options">
+                    <input type="radio" name="performance" id="execellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="performance" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="performance" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="performance" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+
+            <h4>COURSE</h4>
+            <!--6. course material-->
+            <div class="formGroup">
+                <label for="courseMaterial">6. How would you rate the <span>course materials</span>?</label>
+                <div id="options">
+                    <input type="radio" name="courseMaterial" id="execellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="courseMaterial" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="courseMaterial" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="courseMaterial" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+            <!--7. expectations-->
+            <div class="formGroup">
+                <label for="expectations">7. How much did this course meet your <span>expectations</span>?</label>
+                <div id="options">
+                    <input type="radio" name="expectations" id="execellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="expectations" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="expectations" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="expectations" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+            <!--8. overall-->
+            <div class="formGroup">
+                <label for="overall">8. How would you rate this course (<span>overall</span>)?</label>
+                <div id="options">
+                    <input type="radio" name="overall" id="execellent" />
+                    <label for="execellent">Execellent</label>
+                    <input type="radio" name="overall" id="good" />
+                    <label for="good">Good</label>
+                    <input type="radio" name="overall" id="fair" />
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="overall" id="notSatisfactory" />
+                    <label for="notSatisfactory">Not Satisfactory</label>
+                </div>
+            </div>
+
+            <h4>GENERAL INFORMATION</h4>
+            <!--9. course outline-->
+            <div class="formGroup">
+                <label for="courseOutline">9. Was the <span>course outline</span> reviewed/explained at the beginning of your course?</label>
+                <div id="options">
+                    <input type="radio" name="courseOutline" id="yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="courseOutline" id="no" />
+                    <label for="no">No</label>
+                    <input type="radio" name="courseOutline" id="notSure" />
+                    <label for="notSure">Not Sure</label>
+                </div>
+            </div>
+            <!--10. recommend-->
+            <div class="formGroup">
+                <label for="recommend">10. Would you <span>recommend</span> this course to a friend with the same interests?</label>
+                <div id="options">
+                    <input type="radio" name="recommend" id="yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="recommend" id="no" />
+                    <label for="no">No</label>
+                    <input type="radio" name="recommend" id="notSure" />
+                    <label for="notSure">Not Sure</label>
+                </div>
+            </div>
+
+            <h4>ANY OTHER COMMENTS</span> (please use the back of the computer card or this paper if necessary)</h4>
+            <!--11. best things-->
+            <div class="formGroup">
+                <label for="bestThings">11. What is the <span>best things </span>about this course?</label>
+                <input type="text" name="bestThings" id="bestThings" />
+
+            </div>
+            <!--12. improve-->
+            <div class="formGroup">
+                <label for="improve">12. How could we <span>improve</span> this course?</label>
+                <input type="text" name="improve" id="improve" />
+            </div>
+            <!--13. other-->
+            <div class="formGroup">
+                <label for="other">13. Other:</label><p>
+                    <textarea id="message" name="message" placeholder="Please Enter you Comments Here..."></textarea>
+                </p>
+
+            </div>
+            <div class="formGroup">
+                <input type="submit" value="Submit" id="submitButton" class="formButton" />
+                <input type="reset" value="Reset" id="resetButton" class="formButton" />
+            </div>
+        </form>
+    </div><!--End mainContent -->
+    <!--FOOTER-->
+    <footer align="center">
+        <p>Thank you! We pat attention to your feedback!</p>
+        <p>Web: <a href="www.centennialcollege.ca/continuing_education">www.centennialcollege.ca/continuing_education</a>&nbsp; &nbsp;Email: <a href="mailto:continuingeducation@centennialcollege.ca?=Contact Webmaster">continuingeducation@centennialcollege.ca</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿body{
+	display:block;
+}
+a:-webkit-any-link {
+  text-decoration: underline;
+  cursor: auto;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+div {
+	display: block;
+	background-color: #68BAAB;
+}
+.wrapper #image2 {
+	position: absolute;
+}
+.wrapper #content {
+	margin-left: 648px;
+	background-color: #A0CFEC;
+}
+p {
+	font-family: Comic Sans MS;
+	display: block;
+	clip: rect(auto, auto, auto, 425px);
+}
+h2 {
+	margin-left: 5px;
+	font-family: Lucida Sans Unicode;
+	background-color: #166896;
+	width: 350px;
+}
+.tbl {
+  margin-left: 5px;
+  width: 1000px;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+.tablehead {
+	background-color: #166896;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+}

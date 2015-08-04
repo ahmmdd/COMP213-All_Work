@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Author: Tom Tsiliopoulos -->
+    <!-- Web App Name: COMP213 - Lesson 10 - Part 1 -->
+    <!-- Creation Date: July 14, 2015 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP213 - Lesson 10 - Part 1</title>
+    <!-- CSS Section -->
+    <link href="Content/reset.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="primaryNav">
+            <span class="menuButton" tabindex="0">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+            <ul class="menuContent">
+                <li class="active"><a href="week10.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#">Link #3</a></li>
+                <li><a href="#">Link #4</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> <!-- menuContent -->
+        </nav><!-- primaryNav -->
+    </header>
+
+    <!-- Content Section -->
+
+    <div id="emailForm">
+        <h2>Forms Example - Email Forum</h2>
+        <form id="mainForm" action="dashboard.html" method="get">
+            <div class="formGroup">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" name="customerName" id="customerName" placeholder="Enter Your Name" required autofocus />
+            </div>
+
+            <div class="formGroup">
+                <label for="password">Contact Number:</label>
+                <input type="tel" name="password" id="contactNumber" placeholder="Enter Your Contact Number" required autofocus />
+            </div>
+            <div class="formGroup">
+                <label for="email">Email:</label>
+                <input type="email" name="password" id="customerEmail" placeholder="Enter Your Email Address" required autofocus />
+            </div>
+            <div class="formGroup">
+                <label for="message">Your Message:</label>
+                <input type="text" name="password" id="message" placeholder="Enter Your Message Here..." required autofocus />
+            </div>
+        </form>
+
+
+
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <h4>&copy; Copyright 2015</h4>
+    </footer>
+</body>
+</html>

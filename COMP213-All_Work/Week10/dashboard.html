@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Author: Tom Tsiliopoulos -->
+    <!-- Web App Name: COMP213 - Lesson 10 - Part 1 -->
+    <!-- Creation Date: July 14, 2015 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP213 - Dashboard</title>
+    <!-- CSS Section -->
+    <link href="Content/reset.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="primaryNav">
+            <span class="menuButton" tabindex="0">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+            <ul class="menuContent">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#">Link #3</a></li>
+                <li><a href="#">Link #4</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> <!-- menuContent -->
+        </nav><!-- primaryNav -->
+    </header>
+
+    <!-- Content Section -->
+
+    <div id="mainContent">
+        <h2>Forms Example - Radio and Checkboxes</h2>
+        <form id="mainForm" action="#" method="get">
+            <div class="formGroup">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male" value="Male" /><label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female" /><label for="female">Female</label>
+            </div>
+
+
+            <div class="formGroup">
+                <input type="submit" value="Save" id="saveButton" class="formButton" />
+                <input type="reset" value="Cancel" id="cancelButton" class="formButton" />
+            </div>
+
+
+        </form>
+
+
+
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <h4>&copy; Copyright 2015</h4>
+    </footer>
+</body>
+</html>

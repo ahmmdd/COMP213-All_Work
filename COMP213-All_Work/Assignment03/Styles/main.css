@@ -1,0 +1,117 @@
+﻿ul.rollovermenu3d {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.rollovermenu3d li {
+    display: inline;
+    list-type: none;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    float: left; /* float left to left align menu items with no gap */
+}
+
+ul.rollovermenu3d a {
+    display: inline-block;
+    position: relative;
+    color: #000; /* default color */
+    background: #ececec; /* default bg color */
+    text-decoration: none;
+    font: bold 14px Times New Roman; /* font settings. Change font size to affect menu item dimensions as well such as height */
+    letter-spacing: 1px; /* font settings */
+    height: 2em; /* height of each button. */
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2px;
+    -moz-transition: all 0.3s ease-in-out; /* Enable CSS transition between property changes */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.rollovermenu3d a > * { /* all child elements */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: all 0.3s ease-in-out; /* Enable CSS transition between property changes */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.rollovermenu3d a > span { /* chidren span inside button */
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .3em 10px; /* padding of button. .3em value helps vertically center menu item text */
+    -webkit-transform: translate3d(0, 0, 1em); /* 1em here should be half of menu item height (default 2em) */
+    transform: translate3d(0, 0, 1em); /* 1em here should be half of menu item height (default 2em) */
+    top: 0;
+}
+
+ul.rollovermenu3d a::before { /* hidden, relatively positioned element to help set each menu item dimensions */
+    content: attr(data-text); /* Duplicate text of span markup */
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0.3em 10px; /* padding of button. .3em value helps vertically center menu item text */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+ul.rollovermenu3d a::after { /* Generated content to create menu item when it's flipped */
+    content: attr(data-text); /* Duplicate text of span markup */
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    visibility: hidden;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.3em 10px; /* padding of button. .3em value helps vertically center menu item text */
+    position: absolute;
+    background: lightblue; /* background color of flipped menu item */
+    -webkit-transform: rotateX(-90deg) translate3D(0, -1em, 1em); /* 1em here should be half of menu item height (default 2em) */
+    transform: rotateX(-90deg) translate3D(0, -1em, 1em); /* 1em here should be half of menu item height (default 2em) */
+    -moz-transition: all 0.3s ease-in-out; /* Enable CSS transition between property changes */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.rollovermenu3d a:hover > span { /* inner span style when mouse hovers over parent A element */
+    -webkit-transform: rotateX(90deg) translate3D(0, 1em, 1em); /* 1em here should be half of menu item height (default 2em) */
+    transform: rotateX(90deg) translate3D(0, 1em, 1em); /* 1em here should be half of menu item height (default 2em) */
+}
+
+ul.rollovermenu3d a:hover::after { /* inner ::after content style when mouse hovers over parent A element */
+    -webkit-transform: rotateX(0deg) translate3D(0, 0, 1em); /* 1em here should be half of menu item height (default 2em) */
+    transform: rotateX(0deg) translate3D(0,0,1em); /* 1em here should be half of menu item height (default 2em) */
+    visibility: visible;
+    -moz-transition: all 0.3s ease-in-out; /* Enable CSS transition between property changes */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#master {
+    perspective: 1000;
+    perspective-origin: 50% 50%;
+    position: relative;
+}
+
+#front, #left {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    top: 0;
+}
+
+#left {
+    background: green;
+    transform: rotateX(89deg) translate3D(0,-400px,0);
+}

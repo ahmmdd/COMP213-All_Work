@@ -1,0 +1,291 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    padding: 10px;
+}
+
+img {
+    
+    max-width: 80%;
+    height: auto;
+    padding: 5px 10%;
+}
+
+/* Form Styling */
+form {
+    padding: 10px;
+    margin: 15px 0;
+    width: 26em;
+    
+}
+
+label {
+    border: 1px solid transparent;
+    float: left;
+    padding: 7px 5px 5px 5px;
+    width: 6em;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+label[for=male], label[for=female] {
+    border: 1px dashed red;
+    text-align: right;
+    clear: both;
+}
+
+input, textarea {
+
+    padding: 5px;
+    display: block;
+    min-width: 6em;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+textarea {
+    min-width: 8em;
+}
+
+
+input[type=button], input[type=reset], input[type=submit] {
+    display: inline;
+}
+
+input[type=radio] {
+    margin: 5px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    min-width: 1em;
+
+    border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+}
+
+.formGroup {
+    padding: 15px;
+    overflow: auto;
+}
+
+.formButton {
+    float: right;
+    margin: 0 0.5em;
+
+    color: white;
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow:inset 2px 2px 5px #ccc2cc;
+    -webkit-box-shadow:inset 2px 2px 5px #ccc2cc;
+    box-shadow:inset 2px 2px 5px #ccc2cc;
+
+    background: #00b7ea;
+    background: -moz-linear-gradient(top,  #00b7ea 0%, #009ec3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b7ea), color-stop(100%,#009ec3));
+    background: -webkit-linear-gradient(top,  #00b7ea 0%,#009ec3 100%);
+    background: -o-linear-gradient(top,  #00b7ea 0%,#009ec3 100%);
+    background: -ms-linear-gradient(top,  #00b7ea 0%,#009ec3 100%);
+    background: linear-gradient(to bottom,  #00b7ea 0%,#009ec3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
+
+}
+
+.formButton:hover {
+    background: #0079c4;
+    background: -moz-linear-gradient(top,  #0079c4 0%, #0088ea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0079c4), color-stop(100%,#0088ea));
+    background: -webkit-linear-gradient(top,  #0079c4 0%,#0088ea 100%);
+    background: -o-linear-gradient(top,  #0079c4 0%,#0088ea 100%);
+    background: -ms-linear-gradient(top,  #0079c4 0%,#0088ea 100%);
+    background: linear-gradient(to bottom,  #0079c4 0%,#0088ea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c4', endColorstr='#0088ea',GradientType=0 );
+
+}
+
+#mainForm {
+    border-top: 1px solid #ccc2cc;
+    border-left: 1px solid #ccc2cc;
+    -moz-box-shadow: 2px 2px 5px #ccc2cc;
+    -webkit-box-shadow: 2px 2px 5px #ccc2cc;
+    box-shadow: 2px 2px 5px #ccc2cc;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+
+
+header {
+    padding: 10px;
+    margin: 15px 0;
+}
+
+footer {
+    clear: both;
+    float: none;
+    margin: 15px 0;
+    background-color: #CCCCFF; 
+}
+
+nav {
+    background-color: black;
+    overflow: auto;
+}
+
+nav ul {
+    text-align: right;
+    overflow: auto;
+}
+
+nav ul li {
+    padding: 15px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: darkgray;
+}
+
+.active, .active:hover {
+    background-color: gray;
+}
+
+.active a:hover {
+    cursor: default;
+}
+
+#mainContent {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 90%;
+}
+
+strong {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+aside {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 70px 15px;
+    padding: 15px;
+    max-width: 40%;
+    border: 1px solid blue;
+    float: left;
+    overflow: auto;
+}
+
+#contactInfo {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 60%;
+    float: left;
+}
+
+#contactInfo form {
+    width: 36em;
+}
+
+#contactInfo label {
+    width: 10em;
+}
+
+@media only screen and (max-width: 480px) {
+    .menuContent {
+        display: none;
+    }
+
+    .menuButton {
+        margin: 5px;
+        display: block;
+        float: right;
+        width: 44px;
+        height: 30px;
+        padding: 1px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .icon-bar {
+        display: block;
+        background-color: white;
+        width: 22px;
+        height: 2px;
+        margin: 4px auto;
+        border: 1px solid white;
+        border-radius: 2px;
+    }
+
+    .menuButton:focus, .menuButton:hover {
+        background-color: darkgray;
+    }
+
+    .menuButton:focus ~ .menuContent {
+        display: block;
+    }
+
+    nav ul {
+        width: 100%;
+        margin-top: 40px;
+
+    }
+
+    nav ul li {
+        border: 1px solid white;
+        display: block;
+    }
+}
+
+#transformer {
+    border: 2px solid #5656a3;
+    margin: 0 auto;
+    padding: 1%;
+    width: 50%;
+
+    -moz-transform: rotate(0) scale(1);
+    -ms-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+
+    
+    -moz-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; 
+}
+
+
+#transformer:hover { 
+    -moz-transform: rotate(3deg) scale(0.8);
+    -ms-transform: rotate(3deg) scale(0.8);
+    -o-transform: rotate(3deg) scale(0.8);
+    -webkit-transform: rotate(3deg) scale(0.8);
+    transform: rotate(3deg) scale(0.8);
+
+    -moz-transition: transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
+    -webkit-transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in; 
+}

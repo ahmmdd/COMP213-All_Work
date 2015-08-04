@@ -1,0 +1,96 @@
+﻿body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    padding: 10px;
+}
+
+img {
+    
+    max-width: 80%;
+    padding: 5px 10%;
+}
+
+
+header {
+    padding: 10px;
+    margin: 15px 0;
+}
+
+main { 
+        max-width: 70%;
+        padding: 10px 1%;
+        background-color:  #FFFFFF; 
+        float: left;
+
+}
+
+
+section {
+    float: left;
+    max-width: 25%;
+    padding: 1%;
+}
+
+footer {
+    float: none;
+    margin: 15px 0;
+    background-color: #CCCCFF; 
+}
+
+nav {
+    padding: 10px;
+    background-color: black;
+    overflow: auto;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    padding: 5px;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+
+}
+
+#gallery h2 {
+    padding: 10px 10%;
+}
+
+#backToTop {
+     text-align: right;
+}
+
+#backToTop a:link    {color:#000066;}
+#backToTop a:visited {color:#003366;}
+#backToTop a:focus, #backToTop a:active {color:#FF0000;}
+#backToTop a:hover	 {
+    color:#0099CC;
+    font-weight: bold;
+}
+

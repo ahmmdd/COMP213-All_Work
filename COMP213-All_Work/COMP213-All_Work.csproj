@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4051327D-F511-418E-B18E-9F024905BAE3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COMP213_All_Work</RootNamespace>
+    <AssemblyName>COMP213-All_Work</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assignment01\Assets\bullet.gif" />
+    <Content Include="Assignment01\Assets\bullet_green.png" />
+    <Content Include="Assignment01\Assets\logo.gif" />
+    <Content Include="Assignment01\Assets\logo1.GIF" />
+    <Content Include="Assignment02\Assets\environment.jpg" />
+    <Content Include="Assignment02\Assets\icon_earthday.jpg" />
+    <Content Include="Assignment02\assignment02.html" />
+    <Content Include="Assignment02\Styles\main.css" />
+    <Content Include="Assignment03\Assets\Huawei.jpg" />
+    <Content Include="Assignment03\Assets\map-canada-provinces.jpg" />
+    <Content Include="Assignment03\Assets\P8.jpg" />
+    <Content Include="Assignment03\assignment03.html" />
+    <Content Include="Assignment03\Details.html" />
+    <Content Include="Assignment03\Styles\main.css" />
+    <Content Include="Assignment04\Assets\joint.jpg" />
+    <Content Include="Assignment04\assignment04.html" />
+    <Content Include="Assignment04\Content\main.css" />
+    <Content Include="Assignment04\Content\reset.css" />
+    <Content Include="index.html" />
+    <Content Include="Assignment01\Styles\main.css" />
+    <Content Include="Test01\300833356.html" />
+    <Content Include="Test01\Assets\banner_swimming.jpg" />
+    <Content Include="Test01\Assets\Olympic_logo.png" />
+    <Content Include="Test01\Assets\swimmer.jpg" />
+    <Content Include="Test01\Content\300833356.css" />
+    <Content Include="Web.config" />
+    <Content Include="Week01\Assets\logo.gif" />
+    <Content Include="Week02\Assets\bullet_green.png" />
+    <Content Include="Week02\Assets\logo.gif" />
+    <Content Include="Week02\index.html" />
+    <Content Include="Week03\image\bullet_green.png" />
+    <Content Include="Week03\image\TBerners.jpg" />
+    <Content Include="Week03\image\TBerners.txt" />
+    <Content Include="Week03\Week03.html" />
+    <Content Include="Week04\images\JavaJam.txt" />
+    <Content Include="Week04\images\javalogo.png" />
+    <Content Include="Week04\images\marker.gif" />
+    <Content Include="Week04\images\windingroad.jpg" />
+    <Content Include="Week04\Week04.html" />
+    <Content Include="Week05\images\aball.gif" />
+    <Content Include="Week05\images\blackberry.jpg" />
+    <Content Include="Week05\images\features.txt" />
+    <Content Include="Week05\images\iphone.jpg" />
+    <Content Include="Week05\images\logo.gif" />
+    <Content Include="Week05\images\map-canada-provinces.jpg" />
+    <Content Include="Week05\images\samsung.jpg" />
+    <Content Include="Week05\Week05.html" />
+    <Content Include="Week05\Week05Styles.css" />
+    <Content Include="Week06\images\contact.gif" />
+    <Content Include="Week06\images\favicon.ico" />
+    <Content Include="Week06\images\home.gif" />
+    <Content Include="Week06\images\services.gif" />
+    <Content Include="Week06\images\trillium.gif" />
+    <Content Include="Week06\images\trillium.txt" />
+    <Content Include="Week06\images\trilliumbanner.jpg" />
+    <Content Include="Week06\images\trilliumbg.gif" />
+    <Content Include="Week06\images\trilliumfoot.gif" />
+    <Content Include="Week06\images\trilliumgradient.png" />
+    <Content Include="Week06\Week06.html" />
+    <Content Include="Week06\Week06Styles.css" />
+    <Content Include="Week08\content\main.css" />
+    <Content Include="Week08\content\reset.css" />
+    <Content Include="Week08\Week08.html" />
+    <Content Include="Week09\Content\main.css" />
+    <Content Include="Week09\Content\reset.css" />
+    <Content Include="Week09\Week09.html" />
+    <Content Include="Week10\contact.html" />
+    <Content Include="Week10\Content\main.css" />
+    <Content Include="Week10\Content\reset.css" />
+    <Content Include="Week10\dashboard.html" />
+    <Content Include="Week10\Week10.html" />
+    <Content Include="Week12\Content\main.css" />
+    <Content Include="Week12\Content\reset.css" />
+    <Content Include="Week12\Week12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assignment02\Assets\Thumbs.db" />
+    <Content Include="Assignment03\Assets\Thumbs.db" />
+    <Content Include="Test01\Assets\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Week01\Assets\Thumbs.db" />
+    <Content Include="Week02\Assets\Thumbs.db" />
+    <Content Include="Week03\image\COMP213assignment2M15.doc" />
+    <Content Include="Week03\image\Thumbs.db" />
+    <Content Include="Week04\images\Thumbs.db" />
+    <Content Include="Week05\images\Thumbs.db" />
+    <Content Include="Week06\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Week08\Assets\images\" />
+    <Folder Include="Week09\Assets\" />
+    <Folder Include="Week10\Assets\" />
+    <Folder Include="Week12\Assets\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21378</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:21378/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

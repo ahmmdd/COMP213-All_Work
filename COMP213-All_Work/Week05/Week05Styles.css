@@ -1,0 +1,30 @@
+﻿body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #808080;
+}
+ul {
+	list-style-image: url('images/aball.gif');
+}
+td {
+	vertical-align: top;
+}
+.oddRow {
+	background-color: #FFFFCC;
+}
+.evenRow {
+	background-color: #C7FFAC;
+}
+h3, h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #333399;
+}
+a {
+	text-decoration: none;
+	color: #333399;
+}
+a:hover {
+	text-decoration: underline overline;
+	background-color: #C7FFAC;
+}
